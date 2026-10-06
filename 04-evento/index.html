@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana de Tecnologia IFC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho fixo no topo durante a rolagem (position: sticky) -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#" class="logo">SemTec<span>2026</span></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#palestrantes">Palestrantes</a></li>
+          <li><a href="#programacao">Programação</a></li>
+          <li><a href="#inscricao" class="botao-menu">Inscreva-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero com imagem de fundo e selo posicionado (relative + absolute) -->
+    <section class="hero">
+      <img src="img/palco.svg" alt="" class="hero-fundo">
+      <div class="container hero-conteudo">
+        <p class="hero-chamada">IFC · Campus Videira</p>
+        <h1>Semana de Tecnologia</h1>
+        <p>Três dias de palestras, oficinas e hackathon sobre desenvolvimento web, IA e jogos.</p>
+        <a href="#inscricao" class="botao">Garantir minha vaga</a>
+      </div>
+      <div class="selo-data">
+        <strong>20–22</strong>
+        <span>OUTUBRO</span>
+      </div>
+    </section>
+
+    <section id="palestrantes" class="secao">
+      <div class="container">
+        <h2 class="titulo-secao">Palestrantes</h2>
+        <div class="palestrantes">
+          <article class="pessoa">
+            <span class="etiqueta">Abertura</span>
+            <img src="img/pessoa.svg" alt="Foto ilustrativa de Marina Costa">
+            <h3>Marina Costa</h3>
+            <p>Desenvolvedora front-end</p>
+          </article>
+          <article class="pessoa">
+            <img src="img/pessoa.svg" alt="Foto ilustrativa de Rafael Lima">
+            <h3>Rafael Lima</h3>
+            <p>Pesquisador em IA</p>
+          </article>
+          <article class="pessoa">
+            <span class="etiqueta etiqueta-nova">Novo</span>
+            <img src="img/pessoa.svg" alt="Foto ilustrativa de Júlia Alves">
+            <h3>Júlia Alves</h3>
+            <p>Game designer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="programacao" class="secao secao-clara">
+      <div class="container">
+        <h2 class="titulo-secao">Programação</h2>
+        <ol class="linha-tempo">
+          <li>
+            <time datetime="2026-10-20">20/10 · Segunda</time>
+            <h3>Abertura e palestra: o futuro da Web</h3>
+            <p>Auditório principal, 19h.</p>
+          </li>
+          <li>
+            <time datetime="2026-10-21">21/10 · Terça</time>
+            <h3>Oficinas práticas</h3>
+            <p>Laboratórios 1 a 4, 14h às 18h.</p>
+          </li>
+          <li>
+            <time datetime="2026-10-22">22/10 · Quarta</time>
+            <h3>Hackathon e premiação</h3>
+            <p>Ginásio, 8h às 20h.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="inscricao" class="secao">
+      <div class="container">
+        <h2 class="titulo-secao">Inscrição</h2>
+        <form class="formulario" action="#" method="post">
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+          </div>
+          <div class="campo">
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso">
+              <option>Técnico em Informática</option>
+              <option>Ciência da Computação</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <fieldset class="campo">
+            <legend>Quero participar de:</legend>
+            <label><input type="checkbox" name="atividade" value="palestras"> Palestras</label>
+            <label><input type="checkbox" name="atividade" value="oficinas"> Oficinas</label>
+            <label><input type="checkbox" name="atividade" value="hackathon"> Hackathon</label>
+          </fieldset>
+          <button type="submit" class="botao">Enviar inscrição</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>SemTec 2026 · Instituto Federal Catarinense — Campus Videira</p>
+  </footer>
+
+</body>
+</html>

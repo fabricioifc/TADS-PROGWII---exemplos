@@ -1,0 +1,39 @@
+/* ===== Reset simples ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Variáveis de cor ===== */
+:root {
+  --cafe: #6f4e37;
+  --cafe-escuro: #3e2723;
+  --creme: #f5ebe0;
+  --caramelo: #d4a373;
+  --branco: #ffffff;
+}
+
+/* ===== Página ===== */
+/* Foco: flexbox em várias regiões (topo, hero, cards, rodapé) */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--cafe-escuro);
+  background-color: var(--creme);
+  line-height: 1.6;
+}
+

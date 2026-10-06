@@ -1,0 +1,39 @@
+/* ===== Reset simples ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Variáveis ===== */
+:root {
+  --roxo: #7c3aed;
+  --roxo-escuro: #1e1b4b;
+  --roxo-claro: #ede9fe;
+  --amarelo: #facc15;
+  --texto: #1f2937;
+  --cinza: #6b7280;
+}
+
+/* ===== Página ===== */
+/* Foco: position (sticky, relative, absolute), flexbox e formulário */
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: var(--texto);
+  line-height: 1.6;
+}
