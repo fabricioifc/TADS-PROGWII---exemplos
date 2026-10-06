@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial;
+}
+
+.card {
+    width: 150px;
+    margin: 20px auto;
+    border: 1px solid #ffd8a8;
+    border-radius: 6px;
+
+}
+
+.topo {
+    background-color: #e8590c;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.topo img {
+    width: 50px;
+    /* height: 50px; */
+    border-radius: 50%;
+    /* object-fit: cover; */
+    border: 2px solid white;
+}
+
+.topo h2 {
+    font-size: 0.8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.muted {
+    font-size: 8px;
+    color: lightgray;
+}
+
+.conteudo {
+    padding: 10px;
+}
+
+.conteudo h3 {
+    font-size: 10px;
+    color: #e8590c;
+    border-bottom: 1px solid #e8590c;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.conteudo p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.conteudo ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.conteudo ul li {
+    font-size: 10px;
+    background-color: #ffd8a8;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-left: 2px solid #e8590c;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn-dark {
+    background-color: #222;
+    color: white;
+}
+
+small {
+    text-align: center;
+    display: block;
+    font-size: 8px;
+    color: lightgray;
+    margin-top: 20px;
+}
